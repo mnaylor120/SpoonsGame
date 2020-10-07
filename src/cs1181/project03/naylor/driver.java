@@ -14,6 +14,8 @@ public class driver {
 
         // cards object
         cards setup = new cards();
+//TODO: Consider calling this method several times, using more versatile 
+//create deck method
 
         //This adds cards to group's deck, including Joker
         shuffledDeck = setup.creatingDeck("Clubs", "Spades", "Diamonds",

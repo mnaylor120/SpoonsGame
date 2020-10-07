@@ -89,6 +89,18 @@ public class player {
 
         while (true) {
             try {
+                
+            //TODO: Check if player is winner
+            
+            //Get player info first
+            
+            //If four of the same suite then winner = true
+            
+            //Explore different searching algorithms to find most effecient one. 
+            
+            
+            
+            
 
                 System.out.println("Do you want to draw (1) or get the " + discardDeck.lastElement() + " (2). ");
                 answer = in.nextInt();
