@@ -13,7 +13,7 @@ public class driver {
         System.out.println("Welcome to Spoons! ");
 
         // cards object
-        cards setup = new cards();
+        deck setup = new deck();
 //TODO: Consider calling this method several times, using more versatile 
 //create deck method
 

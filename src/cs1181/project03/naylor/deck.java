@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class cards {
+public class deck {
 
     private final Scanner in = new Scanner(System.in);
     
@@ -25,7 +25,7 @@ public class cards {
     }
     
     
-    public cards() {
+    public deck() {
         this.deck = new LinkedList<>();
     }
 //    private ArrayList<cards> deck = new ArrayList<>();

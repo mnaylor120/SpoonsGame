@@ -16,7 +16,6 @@ public class player {
         return personalDeck;
     }
 
-
     public void setPersonalDeck(ArrayList<String> personalDeck) {
         this.personalDeck = personalDeck;
     }
@@ -43,7 +42,6 @@ public class player {
         }
         System.out.println(display);
 
-        
         if (discardDeck.isEmpty()) {
             System.out.println("Your discard pile is empty -- You must draw a card.");
             drawRandCard(deck, personalDeck);
@@ -55,6 +53,7 @@ public class player {
     /**
      * This method draws a random card from the master deck and gives it to the
      * personal deck
+     *
      * @param deck
      * @param personalDeck
      */
@@ -90,18 +89,11 @@ public class player {
         while (true) {
             try {
                 
-            //TODO: Check if player is winner
-            
-            //Get player info first
-            
-            //If four of the same suite then winner = true
-            
-            //Explore different searching algorithms to find most effecient one. 
-            
-            
-            
-            
-
+                System.out.println(cardType1);
+                //TODO: Check if player is winner
+                //Get player info first
+                //If four of the same suite then winner = true
+                //Explore different searching algorithms to find most effecient one. 
                 System.out.println("Do you want to draw (1) or get the " + discardDeck.lastElement() + " (2). ");
                 answer = in.nextInt();
             } catch (InputMismatchException e) {
@@ -124,6 +116,7 @@ public class player {
 
     /**
      * This method adds a card that the user selects to the discard pile
+     *
      * @param deck
      * @param discardDeck
      * @param personalDeck
@@ -163,10 +156,15 @@ public class player {
         for (int i = 0; i < personalDeck.size(); i++) {
             display += (i + 1) + ". " + personalDeck.get(i) + "\n";
         }
-        
+
         System.out.println(display);
         play(deck, discardDeck, personalDeck);
-        
+
     }
-    
+
+    public boolean isWinner() {
+      return false;
+
+    }
+
 }
